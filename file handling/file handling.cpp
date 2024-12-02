@@ -34,7 +34,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
 
-        cout << "Enter " << i + 1 << " Item Name , price and quantity: ";
+        cout << "Enter item " << i + 1 << " Name , price and quantity: "<<endl;
         cin >> name;
         cin >> price;
         cin >> qty;
@@ -49,6 +49,7 @@ int main()
     {
         Item it = list[i];
         fos << it;
+        
     }
     Item item;
     ifstream fis("Items.txt");
@@ -56,7 +57,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         fis >> item;
-        cout << "Item " << i + 1 << " " << item << endl;
+        cout << "Item " << i + 1 << endl << item << endl;
     }
 
 }
